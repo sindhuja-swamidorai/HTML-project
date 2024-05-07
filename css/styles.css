@@ -1,0 +1,12 @@
+header {
+    background-color: rgba(0, 0, 255, 0.25);
+        
+}
+footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: lightyellow;
+        text-align: center;
+}
