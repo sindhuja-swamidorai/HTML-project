@@ -29,3 +29,12 @@ footer {
     border-width: 2px;
     border-style:double
 }
+
+.full_image {
+    height: 200px;
+    width: 500px;
+}
+
+img-caption {
+    font-weight: bold;
+}
