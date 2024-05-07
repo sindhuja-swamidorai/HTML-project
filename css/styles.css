@@ -24,3 +24,8 @@ footer {
     padding: 10px;
     /* border-bottom-left-radius: 80px; */
 }
+
+.subscription td,th {
+    border-width: 2px;
+    border-style:double
+}

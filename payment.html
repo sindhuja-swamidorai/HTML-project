@@ -68,8 +68,37 @@
         </ul>
     </aside>
     </div>
-    <div class="col-md-9 mt-2">
+    <div class="col-md-9">
     <h6 class="header">Your subscription has ended. Please renew to continue </h6>
+
+    <table class="subscription col-md-12">
+        <h8>Subscription Options </h8>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Duration</th>
+                <th>Charges</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="radio" name="SubscriptionType" value="Standard" checked>&nbspStandard</td>
+                <td>1 month</td>
+                <td>Rs 250</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="SubscriptionType" value="Silver">&nbspSilver</td>
+                <td>3 month</td>
+                <td>Rs 500</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="SubscriptionType" value="Gold">&nbspGold</td>
+                <td>1 Year</td>
+                <td>Rs 1000</td>
+            </tr>
+        </tbody>
+    </table>
+
     <form action="home.html" method="POST" enctype="application/x-www-form-urlencoded">
         <label for="NameInput" class="form-label">Name</label>
         <input type="text" id="NameInput" required class="form-control">
