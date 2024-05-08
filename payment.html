@@ -110,7 +110,9 @@
         <label for="EmailInput">Email Address</label>
         <input type="email" id="EmailInput" class="form-control" required>
         <label for="PhoneInput" class="form-label">Contact No.</label>
-        <input type="tel" id="PhoneInput" class="form-control" required>
+        <input type="tel" id="PhoneInput" class="form-control" required pattern="[0-9]+"
+        oninvalid="this.setCustomValidity('Enter a valid phone number')"
+        onvalid="this.setCustomValidity('')">
 
         <label class="form-label">Select an option to pay</label><br/>
         <div class="form-check form-check-inline">

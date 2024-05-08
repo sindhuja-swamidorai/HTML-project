@@ -81,11 +81,15 @@
         <label for="EmailInput">Email Address</label>
         <input type="email" id="EmailInput" class="form-control" required>
         <label for="PhoneInput" class="form-label">Contact No.</label>
-        <input type="tel" id="PhoneInput" class="form-control" required>
+        <input type="tel" id="PhoneInput" class="form-control" required pattern="[0-9]+"
+            oninvalid="this.setCustomValidity('Enter a valid phone number')"
+            onvalid="this.setCustomValidity('')">
         <label for="Password" class="form-label">Password</label>
-        <input type="password" class="form-control" required id="Password">
+        <input type="password" class="form-control" required id="Password" minlength="8"
+        oninvalid="this.setCustomValidity('Password should have a minimum length of 8 characters')"
+        onvalid="this.setCustomValidity('')">
         <label for="ConfirmPassword" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" required id="ConfirmPassword">
+        <input type="password" class="form-control" required id="ConfirmPassword" minlength="8">
         <br/>
         <label class="form-label">How did you hear about us?</label><br/>
         <div class="form-check form-check-inline">
